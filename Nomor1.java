@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Nomor1{
     public static void main(String[] args){
     int anak = 0;
@@ -5,19 +7,19 @@ public class Nomor1{
     
     Scanner scanner = new Scanner(System.in); 
 
-    System.out.print("Jumlah anggota keluarga :");
+    System.out.print("\nJumlah anggota keluarga :");
     anak = scanner.nextInt();
 
     if (anak >=1 && anak <= 3){
         tunjangan = anak * 100000;
-        System.out.println("Besar tunjangan kesehatan =" + tunjangan);
 
     }else if (anak > 3){
         tunjangan = 300000 + ((anak - 3) * 50000);
-        System.out.println("Besar tunjangan kesehatan =" + tunjangan);
+
     }else{
         return;
     }
+    System.out.println("Besar tunjangan kesehatan =" + tunjangan);
     
     }
 }
