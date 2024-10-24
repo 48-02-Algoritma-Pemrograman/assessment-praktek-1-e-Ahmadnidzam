@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Nomor2{
     public static void main(String[] args){
         double hargaLabubu = 300000;
